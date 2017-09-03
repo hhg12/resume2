@@ -23,7 +23,7 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 
 ## [demo](https://hhg12.github.io/resume2/dist/index.html)
 
-![](https://hhg12.github.io/resume2/resume.jpg)
+![](https://hhg12.github.io/resume2/resume.png)
 
 
 
