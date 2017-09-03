@@ -3,9 +3,9 @@
     <div class="wrapper">
       <span class="logo">Resumer</span>
       <div>
-        <el-button>注册</el-button>
-        <el-button type="primary">登录</el-button>
-        <el-button type="primary" @click="preview">预览</el-button>
+        <el-button :disabled="true">注册</el-button>
+        <el-button type="primary" :disabled="true">登录</el-button>
+        <el-button type="primary" @click="preview" >预览</el-button>
       </div>
     </div>
   </div>

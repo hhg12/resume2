@@ -16,38 +16,36 @@
          <ProfileEditor v-bind:profile="resume.profile"/> 
       </li>
       <li :class="{active: selected === 1}">
-         <ArrayEditor v-bind:items="resume.work" v-bind:lables="{company: '公司', content:
-         '工作内容'}" title="工作经历"/> 
-      </li>
-      <li :class="{active: selected === 2}">
-        <ArrayEditor v-bind:items="resume.study" v-bind:lables="{school: '学校', degree:
-        '学位', time: '时间'}" title="学习经历"/> 
-      </li>
-      <li :class="{active: selected === 3}">
-        <ArrayEditor v-bind:items="resume.projects" v-bind:lables="{name: '项目名称',
-        project: '工作内容'}" title="项目经历"/> 
-      </li>
-      <li :class="{active: selected === 4}">
-        <ArrayEditor v-bind:items="resume.awards" v-bind:lables="{name: '获奖详情'}" 
-        title="获奖情况"/> 
-      </li>
-      <li :class="{active: selected === 5}">
-        <h2>联系方式</h2>
+        <h2>Contacts</h2>
         <el-form >
-        <el-form-item label="QQ">
-          <el-input v-model="resume.contacts[0].qq"></el-input>
-        </el-form-item>
-        <el-form-item label="微信">
-          <el-input v-model="resume.contacts[0].wechat"></el-input>
-        </el-form-item>
-        <el-form-item label="邮箱">
+
+        <el-form-item label="email">
           <el-input v-model="resume.contacts[0].email"></el-input>
         </el-form-item>
-        <el-form-item label="手机">
+        <el-form-item label="phone">
           <el-input v-model="resume.contacts[0].phone"></el-input>
+        </el-form-item>
+        <el-form-item label="github">
+          <el-input v-model="resume.contacts[0].github"></el-input>
+        </el-form-item>
+        <el-form-item label="address">
+          <el-input v-model="resume.contacts[0].address"></el-input>
         </el-form-item>
       </el-form> 
       </li>
+      <li :class="{active: selected === 2}">
+         <ArrayEditor v-bind:items="resume.work" v-bind:lables="{}" title="Work"/> 
+      </li>
+      <li :class="{active: selected === 3}">
+        <ArrayEditor v-bind:items="resume.education" v-bind:lables="{}" title="Education"/> 
+      </li>
+      <li :class="{active: selected === 4}">
+        <ArrayEditor v-bind:items="resume.projects" v-bind:lables="{}" title="Projects"/> 
+      </li>
+      <li :class="{active: selected === 5}">
+        <ArrayEditor v-bind:items="resume.awards" v-bind:lables="{}" title="Awards"/> 
+      </li>
+      
          
     </ol>
   </div>
@@ -65,7 +63,7 @@ export default {
   data: function(){
     return {
       selected: 0,
-      icons: ['shenfenzhengzhengjian', 'gongsi', 'book', 'xin', 'jiangbei01', '3-copy'],
+      icons: ['shenfenzhengzhengjian','3-copy', 'gongsi', 'book', 'xin', 'jiangbei01', ],
       
     }
   },

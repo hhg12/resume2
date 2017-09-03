@@ -1,15 +1,15 @@
 <template>
   <div>
-    <h2>个人信息</h2>
+    <h2>Profile</h2>
     <el-form >
-    <el-form-item label="姓名">
+    <el-form-item label="name">
       <el-input v-model="profile.name"></el-input>
     </el-form-item>
-    <el-form-item label="城市">
-      <el-input v-model="profile.city"></el-input>
+    <el-form-item label="profession">
+      <el-input v-model="profile.profession"></el-input>
     </el-form-item>
-    <el-form-item label="出生年月">
-      <el-input v-model="profile.title"></el-input>
+    <el-form-item label="about">
+      <el-input v-model="profile.about"></el-input>
     </el-form-item>
   </el-form> 
   </div>
